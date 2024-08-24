@@ -73,17 +73,23 @@ public with sharing class ClassesObjectsMethods {
         List<Boolean> checkStringContentResults = new List<Boolean>();
         
         // Check if the string starts with 'Sales'
-        Boolean startsWithSales = input.startsWith('Sales');
-        checkStringContentResults.add(startsWithSales);
-        
+        if(input.startsWith('Sales')){
+            checkStringContentResults.add(true);
+        }else{
+            checkStringContentResults.add(false);
+        }     
         // Check if the string ends with 'Force'
-        Boolean endsWithForce = input.endsWith('Force');
-        checkStringContentResults.add(endsWithForce);
-        
+        if(input.endsWith('Force')){
+            checkStringContentResults.add(true);
+        }else{
+            checkStringContentResults.add(false);
+        }
         // Check if the string contains 'Awesome'
-        Boolean containsAwesome = input.contains('Awesome');
-         
-        checkStringContentResults.add(containsAwesome);
+        if(input.contains('Awesome')){
+            checkStringContentResults.add(true); 
+        }else{
+            checkStringContentResults.add(false);
+        }
         // Replace null with the variable you used to store the result
         return checkStringContentResults;
     }

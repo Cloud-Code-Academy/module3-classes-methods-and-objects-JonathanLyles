@@ -8,7 +8,7 @@
  */
 
 @IsTest
-public with sharing class ClassesObjectsMethodsTest {
+public with sharing class ClassesObjectsMethodsTest{
     @IsTest
     static void testPracticeStringMethods() {
         // Call the practiceStringMethods method
